@@ -1,0 +1,45 @@
+/* Global Reset & Fonts */
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Custom Branding Colors */
+.brand-color {
+    color: #0e3a46; /* The dark teal from the logo */
+}
+
+.brand-bg {
+    background-color: #0e3a46;
+    border-color: #0e3a46;
+}
+
+.brand-bg:hover {
+    background-color: #0b2e38;
+    border-color: #0b2e38;
+}
+
+/* Specific Bootstrap Overrides */
+.form-control {
+    border-radius: 8px; /* Matches the soft rounded look */
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #e9ecef; /* Keeps it grey when typing */
+}
+
+/* Image handling */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Button overrides for the toggle */
+.btn-dark {
+    background-color: #0e3a46;
+    border-color: #0e3a46;
+}
+
+.mb-custom-large {
+    margin-bottom: 3.5rem; /* Adjust this number to nudge the text up or down */
+}

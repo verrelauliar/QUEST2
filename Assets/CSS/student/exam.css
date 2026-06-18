@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #0F4C5C;
+    --primary-hover: #0a3b48;
+    --light-bg: #F9FAFB;
+    --border-color: #e5e7eb;
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1f2937;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* --- Layout Containers --- */
+/* Standard container for both Nav and Body to ensure alignment */
+.exam-layout-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+    height: 70px; /* Reduced height */
+    z-index: 1030;
+    padding: 0;
+}
+
+.navbar-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Minimal Timer (Figma Style) */
+.timer-display {
+    font-family: 'Inter', monospace;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timer-display.warning {
+    color: #dc2626;
+}
+
+/* --- Sidebar Navigator --- */
+.sidebar-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    position: sticky;
+    top: 90px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.q-grid-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.q-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    color: #6b7280;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.q-num:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: #f8fafc;
+}
+
+/* 1. Answered State (Darker Green) */
+.q-num.answered {
+    background-color: #d1fae5; /* More visible green */
+    color: #065f46;            /* Dark green text */
+    border-color: #34d399;
+    font-weight: 600;
+}
+
+/* 2. Current/Active State (Strict Override) */
+.q-num.active,
+.q-num.answered.active {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(15, 76, 92, 0.3);
+    z-index: 5;
+}
+
+/* --- Main Question Card --- */
+.question-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    min-height: 600px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.question-header {
+    margin-bottom: 2rem;
+}
+
+.progress-thin {
+    height: 4px;
+    background-color: #f3f4f6;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+}
+
+.progress-bar-custom {
+    background-color: var(--primary-color);
+}
+
+.question-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* --- Options Styling --- */
+.option-label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.option-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.option-label:hover .option-card {
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+}
+
+/* Selected State */
+.option-input:checked + .option-card {
+    background-color: #effcf6; /* Very light tint */
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+/* Option Letter Box */
+.opt-letter {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #4b5563;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.option-input:checked + .option-card .opt-letter {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.option-input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #0a3b48;
+    border-color: #0a3b48;
+}
+
+.btn-outline-secondary {
+    color: #4b5563;
+    border-color: #e5e7eb;
+}
+.btn-outline-secondary:hover {
+    background-color: #f9fafb;
+    color: #111827;
+    border-color: #d1d5db;
+}
+
+.hidden { display: none !important; }

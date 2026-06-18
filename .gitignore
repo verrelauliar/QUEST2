@@ -1,0 +1,7 @@
+Config/dblocal.php
+.env
+backup/
+test_connect.php
+apply_patch.ps1
+/vendor/
+composer.lock
