@@ -258,7 +258,7 @@ function handleExamSubmission($pdo, $student_id, $exam_id) {
         <div class="container-xl px-4">
             <div class="navbar-content w-100 d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-3">
-                    <img src="../../Assets/Images/mumtaza_logo.png" alt="Logo" height="32">
+                    <img src="../../Assets/Images/logosmp2sindur.png" alt="Logo" height="32">
                     <div class="d-flex flex-column justify-content-center">
                         <h6 class="mb-0 fw-bold text-dark text-truncate" style="max-width: 300px;"><?= htmlspecialchars($exam['title']) ?></h6>
                         <small class="text-muted" style="font-size: 0.75rem;"><?= htmlspecialchars($exam['subject_name']) ?></small>

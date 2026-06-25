@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div style="max-width: 450px; margin: 0 auto; width: 100%;">
 
                 <div class="mb-5 text-start">
-                    <img src="../Assets/Images/logo_mumtazajhs2.png" alt="Logo" height="50" class="mb-3">
+                    <img src="../Assets/Images/logosmp2sindur.png" alt="Logo" height="50" class="mb-3">
                     
                     <h3 class="fw-bold text-dark mb-0">Welcome to QUEST.</h3>
                     <p class="text-secondary small">(QUick Exam & Student Test)</p>
@@ -142,14 +142,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </form>
 
                 <footer class="mt-5 text-muted small text-center text-lg-start">
-                    <p class="mb-0">Copyright © SMP Islam Mumtaza 2025</p>
+                    <p class="mb-0">Copyright © SMPN 2 GUNUNG SINDUR 2026</p>
                     <p>QUEST Development</p>
                 </footer>
             </div>
         </div>
 
         <div class="col-lg-6 d-none d-lg-block p-0">
-            <img src="../Assets/Images/mumtazaschool.jpg" alt="School Building" class="w-100 h-100 object-fit-cover">
+            <img src="../Assets/Images/smp2sindur.png" alt="School Building" class="w-100 h-100 object-fit-cover">
         </div>
     </div>
 </div>

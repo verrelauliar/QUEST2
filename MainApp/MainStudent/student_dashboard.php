@@ -179,7 +179,7 @@ function getSubjectBadgeClass($subject_name) {
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="../../Assets/Images/mumtaza_logo.png" alt="Logo" width="32" height="32" class="me-2">
+      <img src="../../Assets/Images/logosmp2sindur.png" alt="Logo" width="32" height="32" class="me-2">
       Student Dashboard
     </a>
     <div class="d-flex align-items-center gap-3">

@@ -87,7 +87,7 @@ try {
 <div class="container py-4">
     <div class="d-flex justify-content-between align-items-center mb-4 bg-white p-3 rounded-3 shadow-sm border">
         <div class="d-flex align-items-center gap-3">
-            <img src="../../Assets/Images/mumtaza_logo.png" alt="Logo" width="30" height="30" class="object-fit-contain">
+            <img src="../../Assets/Images/logosmp2sindur.png" alt="Logo" width="30" height="30" class="object-fit-contain">
             <h1 class="h5 mb-0 fw-bold text-dark">📚 Manage Subjects</h1>
         </div>
         <a href="teacher_dashboard.php" class="btn btn-light border btn-sm">← Back to Dashboard</a>

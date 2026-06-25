@@ -242,7 +242,7 @@ if ($score_percentage >= 90) {
     <nav class="navbar navbar-light bg-white sticky-top shadow-sm mb-4">
         <div class="container-fluid">
             <div class="d-flex align-items-center gap-3">
-                <img src="../../Assets/Images/mumtaza_logo.png" alt="Logo" height="40">
+                <img src="../../Assets/Images/logosmp2sindur.png" alt="Logo" height="40">
                 <div class="d-flex flex-column">
                     <h1 class="h5 mb-0 fw-bold"><?= htmlspecialchars($attempt['title']) ?></h1>
                     <small class="text-muted"><?= htmlspecialchars($subject_name) ?></small>

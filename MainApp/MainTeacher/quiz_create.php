@@ -201,7 +201,7 @@ try {
 
 <div class="container py-4" style="max-width: 980px;">
   <div class="d-flex align-items-center gap-3 mb-4 bg-white p-3 rounded-3 shadow-sm border">
-      <img src="../../Assets/Images/mumtaza_logo.png" alt="Logo" width="30" height="30" class="object-fit-contain">
+      <img src="../../Assets/Images/logosmp2sindur.png" alt="Logo" width="30" height="30" class="object-fit-contain">
       <h1 class="h5 mb-0 fw-bold text-dark">Create New Quiz</h1>
   </div>
 

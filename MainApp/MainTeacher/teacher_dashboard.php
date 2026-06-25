@@ -116,8 +116,7 @@ try {
     unset($quiz);
     
 } catch (Exception $e) {
-    error_log("Teacher dashboard error: " . $e->getMessage());
-    $quizzes = [];
+    die($e->getMessage());
 }
 
 // Summary Stats
@@ -141,7 +140,7 @@ $completion_rate = ($total_students > 0) ? round(($unique_students_attempted / $
     <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom py-3 mb-5">
         <div class="container">
             <div class="d-flex align-items-center gap-3">
-                <img src="../../Assets/Images/mumtaza_logo.png" alt="Logo" width="40" height="40" class="object-fit-contain">
+                <img src="../../Assets/Images/logosmp2sindur.png" alt="Logo" width="40" height="40" class="object-fit-contain">
                 <div>
                     <h5 class="fw-bold m-0 text-dark">Teacher Dashboard</h5>
                     <small class="text-secondary">Welcome back, <?= $username ?></small>

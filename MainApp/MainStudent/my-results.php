@@ -58,7 +58,7 @@ function getSubjectBadgeColor($subject) {
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top shadow-sm">
         <div class="container-fluid px-4">
             <a class="navbar-brand fw-bold text-primary d-flex align-items-center gap-2" href="#">
-                <img src="../../Assets/Images/mumtaza_logo.png" alt="Logo" width="30" height="30"> Mumtaza
+                <img src="../../Assets/Images/logosmp2sindur.png" alt="Logo" width="30" height="30"> SMPN 2 Sindur
             </a>
             <div class="d-flex align-items-center">
                 <span class="me-3 text-secondary d-none d-md-inline">Welcome, <b class="text-dark"><?= htmlspecialchars($student_name) ?></b></span>
